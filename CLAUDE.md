@@ -15,5 +15,5 @@ Python 3.11 (các file `.pyc` cũ là cpython-311), Windows, driver/GenTL của 
 ## Quy tắc khi làm việc
 - Notebook điều khiển phần cứng thật: không tự chạy cell mở camera/ghi file khi chưa được yêu cầu.
 - Không commit `__pycache__/`, `*.pyc`, file `.dll` runtime, dữ liệu ảnh/video lớn.
-- Cell cuối dùng `cv2` nhưng notebook chưa `import cv2` — thêm import khi chỉnh sửa.
+- Cell cuối (live view qua OpenCV) dùng `ic4.FloatingDisplay`, chỉ chạy trên Windows, cần `opencv-python`.
 - Không đưa serial/IP thiết bị thật vào mã hoặc commit.
