@@ -7,7 +7,7 @@ CameraSICK-Integrated là thử nghiệm điều khiển camera công nghiệp q
 - `SICKCamera/Code.ipynb` — notebook chính, chạy tuần tự từng cell (init `ic4.Library`, enum thiết bị/interface, mở `Grabber`, set property, snap ảnh, ghi clip, live listener).
 - `SICKCamera/test.bmp`, `test2.bmp`, `clip.mp4` — ảnh/video mẫu notebook xuất ra.
 - `imagingcontrol4/` — bản sao (vendored) thư viện Python `imagingcontrol4` của The Imaging Source (kèm binding PySide6). **Không sửa**; nâng cấp bằng `pip install -U imagingcontrol4` thay vì sửa tay. Giấy phép thuộc nhà cung cấp.
-- `ic4-examples` — gitlink (submodule) rỗng, không có `.gitmodules` nên không clone được nội dung; tham chiếu tới repo ví dụ của The Imaging Source.
+- `ic4-examples` — gitlink rỗng đã gỡ khỏi repo (2026-11-23). Ví dụ gốc của The Imaging Source: https://github.com/TheImagingSource/ic4-examples
 
 ## Môi trường
 Python 3.11 (các file `.pyc` cũ là cpython-311), Windows, driver/GenTL của camera đã cài, camera kết nối thật. Cần: `imagingcontrol4`, `opencv-python`, `numpy`, (tùy chọn) `PySide6`.
